@@ -27,4 +27,7 @@ public class Player {
         if(s.length() > MAXLEN) throw new IllegalArgumentException("Zu langer Name");
         return true;
     }
+
+
+
 }

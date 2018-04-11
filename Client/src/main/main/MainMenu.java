@@ -2,17 +2,18 @@ package main.main;
 
 import main.util.Renderable;
 import org.lwjgl.input.Mouse;
-import org.newdawn.slick.Color;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
 import org.newdawn.slick.geom.Rectangle;
+import org.newdawn.slick.gui.TextField;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
+import org.newdawn.slick.tiled.TiledMap;
 import server.ConnectionListener;
 
 public class MainMenu extends BasicGameState {
     private boolean toggle = false;
+
+    private TextField connectInput;
 
     private class MenuItem extends Renderable{
         Rectangle rec;
@@ -26,29 +27,22 @@ public class MainMenu extends BasicGameState {
             this.active = false;
 
         }
-        public void action(){
-
-        }
+        public void action(){}
 
         @Override
         public void render(Graphics graphics) {
-
-
             if(mouseIn) graphics.setLineWidth(3.0f);
             graphics.draw(rec);
-
             graphics.setLineWidth(1.0f);
-
             graphics.drawString(text, rec.getX() + 10, rec.getY() + 10);
         }
     }
 
 
+
     private MenuItem[] items;
 
     private String serverStatus;
-
-
 
     @Override
     public int getID() {
@@ -56,6 +50,11 @@ public class MainMenu extends BasicGameState {
     }
 
     public MainMenu(int id){
+
+    }
+
+    @Override
+    public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException {
         items    = new MenuItem[4];
         items[0] = new MenuItem( new Rectangle(190, 190, 200, 50), "Einstellungen");
         items[1] = new MenuItem(new Rectangle(190, 390, 200, 50), "Spiel hosten"){
@@ -63,14 +62,24 @@ public class MainMenu extends BasicGameState {
                 ConnectionListener.startListening();
             }
         };
+
         items[2] = new MenuItem(new Rectangle(190, 590, 200, 50), "Spiel beitreten");
-        items[3] = new MenuItem(new Rectangle(190, 790, 200, 50), "Programm schließen");
+
+        items[3] = new MenuItem(new Rectangle(190, 790, 200, 50), "Programm schließen"){
+            public void action(){
+                System.exit(0);
+            }
+        };
+        connectInput = new TextField(gameContainer, new TrueTypeFont(new java.awt.Font(java.awt.Font.SERIF,java.awt.Font.BOLD , 12), false), 600, 400, 200, 20);
+
+        connectInput.setBorderColor(Color.green);
+        //connectInput.setBackgroundColor(Color.gray);
+        //connectInput.setTextColor(Color.white);
+        //connectInput.setFocus(true);
+        connectInput.setText("Halo");
 
         serverStatus = "";
-    }
 
-    @Override
-    public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException {
 
     }
 
@@ -79,6 +88,7 @@ public class MainMenu extends BasicGameState {
 
         for(MenuItem mi : items) mi.render(graphics);
         graphics.drawString(serverStatus, 1500, 50);
+        connectInput.render(gameContainer, graphics);
 
     }
 
@@ -88,10 +98,11 @@ public class MainMenu extends BasicGameState {
         for(MenuItem mi : items) mi.mouseIn = mi.rec.contains(x,y);
         serverStatus = ConnectionListener.getStatus();
 
+        System.out.println(connectInput.getText());
+
     }
 
     public void mouseClicked(int button, int x, int y, int clickCount) {
-        System.out.println("CLicked");
         for(MenuItem mi : items) if(mi.rec.contains(x, y)) mi.action();
     }
 }

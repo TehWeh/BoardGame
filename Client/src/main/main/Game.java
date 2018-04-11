@@ -17,8 +17,8 @@ public class Game extends StateBasedGame {
 
     public Game(String title){
         super(title);
-        this.addState(new MainMenu(StartMenu));
-        this.addState(new LobbyMenu(Lobby));
+        //enterState(StartMenu);
+
     }
 
     public static final int StartMenu = 0;
@@ -31,9 +31,7 @@ public class Game extends StateBasedGame {
 
     @Override
     public void initStatesList(GameContainer gameContainer) throws SlickException {
-        this.getState(StartMenu).init(gameContainer, this);
-        this.getState(Lobby).init(gameContainer, this);
-        //this.getState(WorldMap).init(gameContainer, this);
-        enterState(StartMenu);
+        this.addState(new MainMenu(StartMenu));
+        this.addState(new LobbyMenu(Lobby));
     }
 }
