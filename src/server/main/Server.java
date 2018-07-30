@@ -14,7 +14,8 @@ public class Server {
 
 
 
-    public void startServer(){
+    public static void startServer() throws IllegalStateException{
+        if(server != null) throw new IllegalStateException("Server is already active");
         server = new Server("Public Server");
     }
 
@@ -29,4 +30,14 @@ public class Server {
     public static boolean isActive(){
         return server != null;
     }
+
+    public static int getNumberOfPlayers(){
+        return 0;
+    }
+
+    public static int getNumberOfErrors(){
+        return 0;
+    }
+
+
 }

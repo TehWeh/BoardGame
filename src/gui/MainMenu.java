@@ -30,12 +30,7 @@ public class MainMenu extends Stage {
 
         Button settings = new Button("Settings");
 
-        host.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                new HostMenu().show();
-            }
-        });
+        host.setOnMouseClicked(mouseEvent -> new HostMenu().show());
 
 
 

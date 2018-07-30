@@ -2,7 +2,6 @@ package main.main;
 
 import Log.FileLogger;
 import Log.Logger;
-import gui.MainMenu;
 
 public class Main {
     static private Logger eventLogger;
