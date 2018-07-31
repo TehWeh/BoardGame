@@ -1,5 +1,9 @@
 package server.main;
 
+import server.connection.Acceptor;
+import server.connection.ClientManager;
+import server.connection.ClientManagerFactory;
+
 public class Server {
     private static Server server;
 
@@ -17,6 +21,7 @@ public class Server {
     public static void startServer() throws IllegalStateException{
         if(server != null) throw new IllegalStateException("Server is already active");
         server = new Server("Public Server");
+        Acceptor.getSingleton().startListening();
     }
 
     public void startGame(){
@@ -32,11 +37,23 @@ public class Server {
     }
 
     public static int getNumberOfPlayers(){
-        return 0;
+        return ClientManagerFactory.getSingleton().getNumberOfClients();
     }
 
     public static int getNumberOfErrors(){
         return 0;
+    }
+
+    public static String getStatus(){
+        return server.status.toString();
+    }
+
+    public void kickAll(){
+        ClientManagerFactory.getSingleton().kickAll();
+    }
+
+    public static Server getSingleton(){
+        return server;
     }
 
 

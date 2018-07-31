@@ -4,35 +4,52 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Acceptor {
+public abstract class Acceptor {
+    public static Acceptor singleton;
 
-    private ServerSocket servSock;
+    protected boolean listening;
+    protected ServerSocket servSock;
+    protected static final int PORT = 4242;
 
-    private boolean listening;
+    public abstract void startListening();
 
-    public Acceptor(){
-        try {
-            servSock = new ServerSocket();
-        } catch (IOException e) {
-            e.printStackTrace();
+    public static Acceptor getSingleton(){
+        if(singleton == null) singleton = new AcceptorInstance();
+        return singleton;
+    }
+
+    static class AcceptorInstance extends Acceptor{
+        private static final int PORT = 4242;
+
+        public AcceptorInstance(){
+            try {
+                servSock = new ServerSocket(PORT);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-    }
 
-    public void startListening(){
-        listening = true;
-        new Thread(new ClientListener()).start();
-    }
+        public void startListening(){
+            listening = true;
+            new Thread(new ClientListener()).start();
+        }
 
-    class ClientListener implements Runnable{
-        @Override
-        public void run() {
-            while(true){
-                try {
-                    Socket s = servSock.accept();
-                } catch (IOException e) {
-                    e.printStackTrace();
+        class ClientListener implements Runnable{
+            @Override
+            public void run() {
+                while(true){
+                    try {
+                        Socket s = servSock.accept();
+                        System.out.println("Accepted");
+                        ClientManagerFactory.getSingleton().addClient(s);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
     }
+
+
+
 }

@@ -1,7 +1,6 @@
 package gui;
 
 import javafx.application.Platform;
-import javafx.concurrent.Task;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -22,17 +21,19 @@ public class HostMenu extends Stage {
     Button startServer;
     Scene noServerScene;
     Label playerCount;
+    Label phase;
 
     Label errorCount;
+
+    Button kickall;
+
+    Button progress;
+
+    HBox buttonBox;
 
     static final int UPDATE_INTERVAL = 1000;
 
     public HostMenu(){
-        initGUI();
-        //fillGUI();
-    }
-
-    private void initGUI(){
         VBox haupt = new VBox();
         haupt.setSpacing(10);
         haupt.setPadding(new Insets(8, 8, 8, 8));
@@ -51,9 +52,19 @@ public class HostMenu extends Stage {
         playerCount = new Label();
         errorCount = new Label();
 
-        haupt.getChildren().addAll(hb, startServer, playerCount, errorCount);
-        noServerScene = new Scene(haupt, 400, 300);
+        phase = new Label();
 
+        kickall = new Button("Kick all");
+        kickall.setOnMouseClicked(mouseEvent ->{
+            Server.getSingleton().kickAll();
+        });
+        progress = new Button("Starten"); // TEMP
+
+        buttonBox = new HBox();
+        buttonBox.getChildren().addAll(kickall, progress);
+
+        haupt.getChildren().addAll(hb, startServer, playerCount, errorCount, phase, buttonBox);
+        noServerScene = new Scene(haupt, 400, 300);
 
 
         setScene(noServerScene);
@@ -71,8 +82,8 @@ public class HostMenu extends Stage {
                     e.printStackTrace();
                 }
             }
-        }).start();
-    }
+        }).start();    }
+
 
     private void updateGUI(){
         Platform.runLater(() -> {
@@ -85,12 +96,19 @@ public class HostMenu extends Stage {
 
                 errorCount.setVisible(true);
                 errorCount.setText("Number of fatal errors: " + Server.getNumberOfErrors());
+
+                phase.setVisible(true);
+                phase.setText("Serverstatus: " + Server.getStatus());
+
+                buttonBox.setVisible(true);
             }
             else{
                 serverStatus.setText("Not running server detected");
                 startServer.setDisable(false);
                 playerCount.setVisible(false);
                 errorCount.setVisible(false);
+                phase.setVisible(false);
+                buttonBox.setVisible(false);
 
             }
 

@@ -14,6 +14,14 @@ public class Client {
 
     }
 
+    public int getID(){
+        return id;
+    }
+
+    public Socket getSocket(){
+        return socket;
+    }
+
     public enum ClientState{
 
     }
