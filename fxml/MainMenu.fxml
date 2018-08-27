@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="114.0" prefWidth="71.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="7.0" prefHeight="269.0" prefWidth="162.0" spacing="10.0">
+         <children>
+            <Button fx:id="join" mnemonicParsing="false" onAction="#handleJoinButtonAction" text="Spiel beitreten" />
+            <Button fx:id="host" mnemonicParsing="false" onAction="#handleHostButtonAction" text="Hosteinstellungen" />
+            <Button mnemonicParsing="false" text="Clienteinstellungen" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

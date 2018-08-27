@@ -31,6 +31,7 @@ public class ClientManagerFactory {
             clientList.add(c);
             clientMap.put(nextID, c);
             nextID++;
+            new Thread(new ClientListener(c)).start();
 
         }
 

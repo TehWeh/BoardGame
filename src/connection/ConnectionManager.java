@@ -1,6 +1,7 @@
 package connection;
 
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
@@ -28,7 +29,9 @@ public class ConnectionManager {
     }
 
     public void connect() throws IOException {
-        if(socket.isBound()) throw new IllegalStateException("Already Connected");
+        if (socket.isBound()) throw new IllegalStateException("Already Connected");
         socket.connect(new InetSocketAddress("localhost", 4242));
+
+        new ObjectOutputStream(socket.getOutputStream()).writeObject("Hello World!");
     }
 }

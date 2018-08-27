@@ -48,6 +48,7 @@ public class HostMenu extends Stage {
         startServer.setOnMouseClicked(mouseEvent -> {
             Server.startServer();
         });
+        
 
         playerCount = new Label();
         errorCount = new Label();
@@ -82,7 +83,8 @@ public class HostMenu extends Stage {
                     e.printStackTrace();
                 }
             }
-        }).start();    }
+        }).start();
+        }
 
 
     private void updateGUI(){
@@ -96,7 +98,7 @@ public class HostMenu extends Stage {
 
                 errorCount.setVisible(true);
                 errorCount.setText("Number of fatal errors: " + Server.getNumberOfErrors());
-
+    
                 phase.setVisible(true);
                 phase.setText("Serverstatus: " + Server.getStatus());
 
@@ -109,7 +111,6 @@ public class HostMenu extends Stage {
                 errorCount.setVisible(false);
                 phase.setVisible(false);
                 buttonBox.setVisible(false);
-
             }
 
         });
