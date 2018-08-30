@@ -44,9 +44,10 @@ public class Server {
         return 0;
     }
 
-    public static String getStatus(){
-        return server.status.toString();
+    public static ServerState getStatus(){
+        return server.status;
     }
+
 
     public void kickAll(){
         ClientManagerFactory.getSingleton().kickAll();

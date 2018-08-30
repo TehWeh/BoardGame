@@ -13,7 +13,7 @@ public class Main {
         Application.launch(Application.class);
     }
 
-    public Logger getEventLogger(){
+    public static Logger getEventLogger(){
         return eventLogger;
     }
 }

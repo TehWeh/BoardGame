@@ -14,18 +14,16 @@ import java.io.IOException;
 
 public class MainMenuController extends Stage {
 
-    //@FXML private Button join, host;
-
-
     @FXML protected void handleJoinButtonAction() {
         try {
+            System.out.println("wft");
             ConnectionManager.getManager().connect();
 
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("No Server running on localhost");
             alert.showAndWait();
-            System.out.println("Error");
+            e.printStackTrace();
         } catch(IllegalStateException e){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
