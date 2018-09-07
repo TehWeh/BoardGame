@@ -2,6 +2,7 @@ package connection;
 
 import Log.LogSource;
 import main.main.Main;
+import main.main.WindowManager;
 import msg.ClientMessage;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
@@ -59,12 +60,13 @@ public class ConnectionManager implements LogSource {
         outputWriter.start();
         inputListener = new InputListener();
         inputListener.start();
+        WindowManager.getManager().newWindow();
 
     }
 
     @Override
     public void log(String s) {
-            Main.getEventLogger().addEntry(s);
+                Main.getEventLogger().addEntry(s);
     }
 
     public class OutputWriter extends Thread{

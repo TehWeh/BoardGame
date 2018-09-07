@@ -16,7 +16,6 @@ public class MainMenuController extends Stage {
 
     @FXML protected void handleJoinButtonAction() {
         try {
-            System.out.println("wft");
             ConnectionManager.getManager().connect();
 
         } catch (IOException e) {
