@@ -1,18 +1,13 @@
 package gui;
 
 import connection.ConnectionManager;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
-import java.io.File;
 import java.io.IOException;
 
 
-public class MainMenuController extends Stage {
+public class MainMenuController{
 
     @FXML protected void handleJoinButtonAction() {
         try {

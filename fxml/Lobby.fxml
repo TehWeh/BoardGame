@@ -6,15 +6,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LobbyController">
    <children>
       <VBox prefHeight="400.0" prefWidth="600.0">
          <children>
             <TextFlow accessibleText="Hallo" prefHeight="91.0" prefWidth="531.0" />
-            <TableView prefHeight="200.0" prefWidth="200.0">
+            <TableView id="table" fx:id="table" editable="true" prefHeight="200.0" prefWidth="200.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="Name" />
-                <TableColumn prefWidth="75.0" text="Color" />
+                <TableColumn id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn id="colorColumn" prefWidth="75.0" text="Color" />
               </columns>
             </TableView>
          </children>
