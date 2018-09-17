@@ -1,4 +1,1 @@
 EventLogger: New File Logger started
-ConnectionManager: Setting Up Connection
-InputListener starts running
-ClientManager: ID received (0)
