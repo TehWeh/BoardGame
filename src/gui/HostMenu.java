@@ -1,6 +1,7 @@
 package gui;
 
 import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -8,28 +9,23 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
+import javafx.stage.WindowEvent;
 import server.main.Server;
 
 import static java.lang.Thread.sleep;
 
-
 public class HostMenu extends Stage {
-
-    //Vbox - Hauptlayout
-
     Label serverStatus;
     Button startServer;
     Scene noServerScene;
     Label playerCount;
     Label phase;
-
     Label errorCount;
-
     Button kickall;
-
     Button progress;
-
     HBox buttonBox;
+
+    private boolean active;
 
     static final int UPDATE_INTERVAL = 1000;
 
@@ -74,17 +70,21 @@ public class HostMenu extends Stage {
 
         setTitle("Serverübersicht");
 
+        active = true;
         new Thread(() -> {
-            while(true){
+            while(active){
                 updateGUI();
                 try {
                     sleep(UPDATE_INTERVAL);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                System.out.println("running");
             }
         }).start();
-        }
+
+        setOnCloseRequest(e -> active = false);
+    }
 
 
     private void updateGUI(){
@@ -112,8 +112,6 @@ public class HostMenu extends Stage {
                 phase.setVisible(false);
                 buttonBox.setVisible(false);
             }
-
         });
-
     }
 }

@@ -11,17 +11,17 @@ public class Client {
     public ObjectOutputStream getObjectOutputStream() {
         return oos;
     }
-
     private ObjectOutputStream oos;
-
     private ClientState state;
 
     public Client(int id, Socket socket) throws IOException {
         this.id = id;
         this.socket = socket;
         oos = new ObjectOutputStream(socket.getOutputStream());
-
+        state = ClientState.CONNECTED;
     }
+
+
 
     public int getID(){
         return id;
@@ -32,6 +32,6 @@ public class Client {
     }
 
     public enum ClientState{
-
+        CONNECTED, REGISTERED;
     }
 }

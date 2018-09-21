@@ -21,7 +21,7 @@ class ClientManagerInstance implements ClientManager {
         nextID = 0;
     }
 
-    public void addClient(Socket s) throws IOException {
+    public synchronized void addClient(Socket s) throws IOException {
         Client c = new Client(nextID, s);
         clientList.add(c);
         clientMap.put(nextID, c);
@@ -44,11 +44,11 @@ class ClientManagerInstance implements ClientManager {
     }
 
     @Override
-    public void sendMessage(ServerMessage m) {
+    public synchronized void sendMessage(ServerMessage m) {
         clientWriter.messages.add(m);
     }
 
-    private void kick(int id){
+    private synchronized void kick(int id){
         Client c = clientMap.get(id);
         if(c == null) throw new IllegalArgumentException("Client not found");
         try {
