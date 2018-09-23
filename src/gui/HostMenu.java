@@ -79,7 +79,6 @@ public class HostMenu extends Stage {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("running");
             }
         }).start();
 
@@ -97,7 +96,7 @@ public class HostMenu extends Stage {
                 playerCount.setText("Number of active players: " + Server.getNumberOfPlayers());
 
                 errorCount.setVisible(true);
-                errorCount.setText("Number of fatal errors: " + Server.getNumberOfErrors());
+                errorCount.setText("Number of errors: " + Server.getNumberOfErrors());
     
                 phase.setVisible(true);
                 phase.setText("Serverstatus: " + Server.getStatus());

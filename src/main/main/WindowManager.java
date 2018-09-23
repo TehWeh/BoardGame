@@ -18,9 +18,9 @@ public class WindowManager {
 
     }
 
-    public void newWindow(){
+    public void newWindow(String s){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("Lobby.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(s));
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));

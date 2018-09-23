@@ -1,6 +1,7 @@
 package connection;
 
 import Log.LogSource;
+import config.ConfigurationManager;
 import main.main.Main;
 import main.main.WindowManager;
 import msg.ClientMessage;
@@ -53,15 +54,14 @@ public class ConnectionManager implements LogSource {
     public void connect() throws IOException {
         if (socket.isBound()) throw new IllegalStateException("Already Connected");
         log("ConnectionManager: Setting Up Connection");
-        socket.connect(new InetSocketAddress("localhost", 4242));
+        socket.connect(new InetSocketAddress(ConfigurationManager.getManager().getServerIP(), 4242));
         oos = new ObjectOutputStream(socket.getOutputStream());
         ois = new ObjectInputStream(socket.getInputStream());
         outputWriter = new OutputWriter();
         outputWriter.start();
         inputListener = new InputListener();
         inputListener.start();
-        WindowManager.getManager().newWindow();
-
+        WindowManager.getManager().newWindow("Lobby.fxml");
     }
 
     @Override
