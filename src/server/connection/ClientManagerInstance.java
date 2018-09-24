@@ -1,5 +1,6 @@
 package server.connection;
 
+import main.main.Main;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 
@@ -76,6 +77,7 @@ class ClientManagerInstance implements ClientManager {
                 Client c = clientMap.get(msg.getClientID());
                 try {
                     c.getObjectOutputStream().writeObject(msg);
+                    Main.getEventLogger().addEntry("Server Wrote Message");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

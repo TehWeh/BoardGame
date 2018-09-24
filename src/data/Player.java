@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
-public class Player implements Externalizable {
+public class Player extends DataObject {
     int id;
     String name;
 

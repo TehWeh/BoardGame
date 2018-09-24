@@ -64,6 +64,10 @@ public class ConnectionManager implements LogSource {
         WindowManager.getManager().newWindow("Lobby.fxml");
     }
 
+    public void sendMessage(ClientMessage msg){
+        outputWriter.q.add(msg);
+    }
+
     @Override
     public void log(String s) {
                 Main.getEventLogger().addEntry(s);
@@ -108,6 +112,7 @@ public class ConnectionManager implements LogSource {
             while (running) {
                 try {
                     ServerMessage m = (ServerMessage) ois.readObject();
+                    Main.getEventLogger().addEntry("Client received Message");
                     new Thread(() -> m.handle()).start();
                 } catch (IOException e) {
                     e.printStackTrace();

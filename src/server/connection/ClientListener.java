@@ -1,5 +1,7 @@
 package server.connection;
 
+import msg.ClientMessage;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
@@ -23,8 +25,9 @@ public class ClientListener implements Runnable {
     public void run() {
         while(listening){
             try {
-                Object o = ois.readObject();
-                System.out.println(o);
+                ClientMessage msg = (ClientMessage) ois.readObject();
+                System.out.println(msg);
+                new Thread(() -> msg.handle()).start();
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {

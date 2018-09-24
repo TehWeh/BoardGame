@@ -85,7 +85,6 @@ public class HostMenu extends Stage {
         setOnCloseRequest(e -> active = false);
     }
 
-
     private void updateGUI(){
         Platform.runLater(() -> {
             if(Server.isActive()){
