@@ -3,7 +3,7 @@ ConnectionManager: Setting Up Connection
 InputListener starts running
 Server Wrote Message
 Client received Message
-ClientManager: ID received (0)
+Client's Connection Manager: ID received (0)
 Handling PlayerRequestMessage
 Server Wrote Message
 Client received Message

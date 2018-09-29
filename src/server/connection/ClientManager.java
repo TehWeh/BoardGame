@@ -11,4 +11,6 @@ public interface ClientManager {
     void kickAll();
 
     void sendMessage(ServerMessage m);
+
+    void registerPlayer(int id, String name);
 }

@@ -48,7 +48,7 @@ public class ConnectionManager implements LogSource {
 
     public void setID(IdInfo info){
         this.id = info.getClientID();
-        log("ClientManager: ID received (" + id + ")");
+        log("Client's Connection Manager: ID received (" + id + ")");
     }
 
     public void connect() throws IOException {
