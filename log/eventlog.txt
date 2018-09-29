@@ -1,10 +1,13 @@
 EventLogger: New File Logger started
+Loading config screen
+Save Button Pressed
+Writing config file
+Loading config screen
+Save Button Pressed
+Writing config file
+Loading config screen
+Save Button Pressed
+Writing config file
 ConnectionManager: Setting Up Connection
-InputListener starts running
-Server Wrote Message
-Client received Message
-Client's Connection Manager: ID received (0)
-Handling PlayerRequestMessage
-Server Wrote Message
-Client received Message
-received playercount: 0
+ConnectionManager: Setting Up Connection
+ConnectionManager: Setting Up Connection

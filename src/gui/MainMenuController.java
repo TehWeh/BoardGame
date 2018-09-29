@@ -3,8 +3,6 @@ package gui;
 import connection.ConnectionManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.stage.Stage;
-import main.main.WindowManager;
 
 import java.io.IOException;
 
@@ -32,6 +30,6 @@ public class MainMenuController{
     }
 
     @FXML protected  void handleClientButtonAction(){
-        WindowManager.getManager().newWindow("ClientSettings.fxml");
+        WindowManager.getManager().newWindow("ClientSettings.fxml", "Settings");
     }
 }

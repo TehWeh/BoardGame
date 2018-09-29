@@ -3,7 +3,7 @@ package connection;
 import Log.LogSource;
 import config.ConfigurationManager;
 import main.main.Main;
-import main.main.WindowManager;
+import gui.WindowManager;
 import msg.ClientMessage;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
@@ -61,7 +61,7 @@ public class ConnectionManager implements LogSource {
         outputWriter.start();
         inputListener = new InputListener();
         inputListener.start();
-        WindowManager.getManager().newWindow("Lobby.fxml");
+        WindowManager.getManager().newWindow("Lobby.fxml", "Lobby");
     }
 
     public void sendMessage(ClientMessage msg){
