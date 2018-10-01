@@ -1,5 +1,6 @@
 package server.connection;
 
+import main.main.Main;
 import msg.ClientMessage;
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class ClientListener implements Runnable {
         while(listening){
             try {
                 ClientMessage msg = (ClientMessage) ois.readObject();
-                System.out.println(msg);
+                Main.getEventLogger().addLowPriorityEntry(msg.toString());
                 new Thread(() -> msg.handle()).start();
             } catch (IOException e) {
                 e.printStackTrace();

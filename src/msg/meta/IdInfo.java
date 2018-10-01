@@ -9,8 +9,8 @@ import java.io.ObjectOutput;
 
 public class IdInfo extends ServerMessage {
 
-    public IdInfo(int cid, int mid) {
-        super(cid, mid);
+    public IdInfo(int cid) {
+        super(cid);
     }
 
     @Override

@@ -13,7 +13,6 @@ public class NameChangeRequest extends ClientMessage{
     private String name;
 
     public NameChangeRequest(int clientID, int messageID) {
-        super(clientID, messageID);
         this.name = name;
     }
 

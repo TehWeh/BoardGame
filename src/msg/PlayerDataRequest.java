@@ -1,7 +1,6 @@
 package msg;
 
 import data.PlayerData;
-import main.main.Main;
 import server.connection.ClientManagerFactory;
 import server.game.PlayerManager;
 
@@ -10,11 +9,13 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 public class PlayerDataRequest extends ClientMessage {
+    public PlayerDataRequest() {
+    }
+
     @Override
     public void handle() {
-        Main.getEventLogger().addEntry("Handling PlayerRequestMessage");
         PlayerData pd = PlayerManager.getManager().getData();
-        ClientManagerFactory.getSingleton().sendMessage(new PlayerDataInfo(clientID, messageID, pd)); // TODO Message ids
+        ClientManagerFactory.getSingleton().sendMessage(new PlayerDataInfo(clientID, pd, 42)); // TODO Message ids
     }
 
     @Override

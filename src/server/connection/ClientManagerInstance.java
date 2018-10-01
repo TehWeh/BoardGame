@@ -1,6 +1,7 @@
 package server.connection;
 
 import main.main.Main;
+import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 import server.game.PlayerManager;
@@ -36,7 +37,7 @@ class ClientManagerInstance implements ClientManager {
         new Thread(new ClientListener(c)).start();
         clientWriter = new ClientWriter();
         clientWriter.start();
-        sendMessage(new IdInfo(c.getID(), -1));
+        sendMessage(new IdInfo(c.getID()));
 
     }
 
@@ -88,7 +89,8 @@ class ClientManagerInstance implements ClientManager {
                 Client c = clients[msg.getClientID()];
                 try {
                     c.getObjectOutputStream().writeObject(msg);
-                    Main.getEventLogger().addEntry("Server Wrote Message");
+                    c.getObjectOutputStream().reset();
+                    //Main.getEventLogger().addEntry("Server Wrote Message");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

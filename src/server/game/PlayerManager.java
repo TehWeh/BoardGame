@@ -2,6 +2,7 @@ package server.game;
 
 import data.Player;
 import data.PlayerData;
+import main.main.Main;
 
 public class PlayerManager {
     private static PlayerManager singleton = null;
@@ -19,6 +20,7 @@ public class PlayerManager {
     }
 
     public PlayerData getData(){
+        System.out.println("Server sends " + data.playerCount + " Players");
         return data;
     }
 
@@ -28,6 +30,9 @@ public class PlayerManager {
         if(data.getPlayers()[id] != null) throw new IllegalStateException("Id already taken wtf");
 
         data.getPlayers()[id] = new Player(data.playerCount);
+        Main.getEventLogger().addEntry("Added new Player with id" + playerCount);
+
+        data.playerCount++;
     }
 
     public void changeName(int id, String newName){

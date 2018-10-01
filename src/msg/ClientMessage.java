@@ -1,22 +1,19 @@
 package msg;
 
+import connection.ConnectionManager;
+
 import java.io.*;
 
-public abstract class ClientMessage implements Serializable {
-    protected int clientID;
-    protected int messageID;
-    private int threadID;
-
+public abstract class ClientMessage extends Message {
     protected boolean messageRestored;
 
-    public ClientMessage(int clientID, int messageID){
-        this.clientID = clientID;
-        this.messageID = messageID;
+    public ClientMessage(){
+        super();
         this.messageRestored = true;
     }
 
-    public ClientMessage(){
-        messageRestored = true;
+    public void setID(int id){
+        clientID = id;
     }
 
     public int getClientID(){

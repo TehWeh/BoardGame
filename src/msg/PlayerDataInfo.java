@@ -10,16 +10,22 @@ import java.io.ObjectOutput;
 
 public class PlayerDataInfo extends ServerMessage {
 
-    PlayerData data;
+    public PlayerData data;
+    public int magic;
 
-    public PlayerDataInfo(int cid, int mid, PlayerData data) {
-        super(cid, mid);
+    public PlayerDataInfo(int cid, PlayerData data, int magic) {
+        super(cid);
         this.data = data;
+        System.out.println("Message contains " + data.playerCount + " Players");
+        this.magic = magic;
+        data.magic = magic + magic;
+        //data.playerCount = 12;
     }
 
     @Override
     public void handle(){
         ClientDataContainer.getContainer().setPlayerData(data);
+        Main.getEventLogger().addEntry("Client received " + data.playerCount + " Players, magic = " + magic + "Magic2 = " + data.magic);
     }
 
     @Override

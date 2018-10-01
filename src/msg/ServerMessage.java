@@ -1,9 +1,9 @@
 package msg;
 
 
-public abstract class ServerMessage  extends Message{
+public abstract class ServerMessage extends Message{
 
-    public ServerMessage(int cid, int mid) {
-        super(cid, mid);
+    public ServerMessage(int id) {
+        clientID = id;
     }
 }

@@ -7,7 +7,7 @@ import main.main.Main;
 
 import java.io.IOException;
 
-public class ClientSettingsController {
+public class ClientSettingsController implements Controller{
 
     @FXML
     private TextField playerName;
@@ -53,5 +53,8 @@ public class ClientSettingsController {
     }
 
 
+    @Override
+    public void handleStageShutdown() {
 
+    }
 }

@@ -7,16 +7,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ClientSettingsController">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ClientSettingsController">
   <tabs>
     <Tab text="Allgemein">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="playerName" layoutX="116.0" layoutY="49.0" onAction="#updatePlayerName" />
+                  <TextField fx:id="playerName" layoutX="138.0" layoutY="48.0" onAction="#updatePlayerName" />
                   <Label layoutX="40.0" layoutY="53.0" text="Spielername" />
                   <Label layoutX="50.0" layoutY="95.0" text="Server IP" />
-                  <TextField fx:id="serverIP" layoutX="116.0" layoutY="91.0" onAction="#updateServerIP" onInputMethodTextChanged="#updateServerIP" />
+                  <TextField fx:id="serverIP" layoutX="138.0" layoutY="90.0" onAction="#updateServerIP" onInputMethodTextChanged="#updateServerIP" />
                   <Button layoutX="443.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleSaveButton" text="Einstellungen Speichern" />
                </children></AnchorPane>
       </content>

@@ -3,13 +3,13 @@ package msg;
 import java.io.*;
 
 public abstract class Message implements Serializable {
-    private int clientID;
-    private int messageID;
-    private int threadID;
+    protected int clientID;
+    protected int messageID;
+    protected int threadID;
 
-    public Message(int cid, int mid) {
-        clientID = cid;
-        messageID = mid;
+    public Message() {
+        clientID = 0;
+        messageID = 0;
     }
 
     public abstract void writeAdditionalExternal(ObjectOutput out) throws IOException;

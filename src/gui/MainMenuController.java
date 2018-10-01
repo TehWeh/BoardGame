@@ -7,7 +7,7 @@ import javafx.scene.control.Alert;
 import java.io.IOException;
 
 
-public class MainMenuController{
+public class MainMenuController implements Controller{
 
     @FXML protected void handleJoinButtonAction() {
         try {
@@ -31,5 +31,10 @@ public class MainMenuController{
 
     @FXML protected  void handleClientButtonAction(){
         WindowManager.getManager().newWindow("ClientSettings.fxml", "Settings");
+    }
+
+    @Override
+    public void handleStageShutdown() {
+
     }
 }

@@ -5,6 +5,7 @@ import config.ConfigurationManager;
 import main.main.Main;
 import gui.WindowManager;
 import msg.ClientMessage;
+import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 
@@ -91,6 +92,7 @@ public class ConnectionManager implements LogSource {
                     }
                     ClientMessage m = q.poll();
                     if (m == null) continue;
+                    m.setID(id);
                     try {
                         oos.writeObject(m);
                     } catch (IOException e) {
@@ -112,7 +114,9 @@ public class ConnectionManager implements LogSource {
             while (running) {
                 try {
                     ServerMessage m = (ServerMessage) ois.readObject();
-                    Main.getEventLogger().addEntry("Client received Message");
+                    try{
+                        System.out.println(((PlayerDataInfo) m).data.getPlayers().length);
+                    } catch(Exception e){}
                     new Thread(() -> m.handle()).start();
                 } catch (IOException e) {
                     e.printStackTrace();

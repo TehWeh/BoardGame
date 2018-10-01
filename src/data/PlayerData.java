@@ -6,9 +6,8 @@ import java.io.ObjectOutput;
 
 public class PlayerData extends DataObject {
     public int playerCount;
+    public int magic;
     private Player[] players;
-
-    public PlayerData(){}
 
     public PlayerData(int maxs){
         players = new Player[maxs];
@@ -28,13 +27,13 @@ public class PlayerData extends DataObject {
         return players[i];
     }
 
-    @Override
+    //@Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeInt(playerCount);
         for(int i=0; i<playerCount; i++) out.writeObject(players[i]);
     }
 
-    @Override
+    //@Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         playerCount = in.readInt();
         players = new Player[playerCount];

@@ -15,8 +15,8 @@
                <children>
                   <TableView fx:id="table" prefHeight="271.0" prefWidth="560.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="Name" />
-                      <TableColumn prefWidth="75.0" text="Color" />
+                      <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="colCol" prefWidth="75.0" text="Color" />
                     </columns>
                   </TableView>
                   <Pane prefHeight="271.0" prefWidth="0.0" />
