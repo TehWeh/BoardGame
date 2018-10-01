@@ -15,6 +15,11 @@ public class Player extends DataObject {
         this.id = id;
     }
 
+    public Player(int id, String s){
+        this(id);
+        name = s;
+    }
+
     public void setName(String name) throws IllegalArgumentException{
         if(valid(name)) name = name;
         int x;

@@ -15,7 +15,7 @@ public class PlayerDataRequest extends ClientMessage {
     @Override
     public void handle() {
         PlayerData pd = PlayerManager.getManager().getData();
-        ClientManagerFactory.getSingleton().sendMessage(new PlayerDataInfo(clientID, pd, 42)); // TODO Message ids
+        ClientManagerFactory.getSingleton().sendMessage(new PlayerDataInfo(clientID, pd)); // TODO Message ids
     }
 
     @Override

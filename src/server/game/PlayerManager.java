@@ -1,6 +1,6 @@
 package server.game;
 
-import data.Player;
+    import data.Player;
 import data.PlayerData;
 import main.main.Main;
 
@@ -20,7 +20,7 @@ public class PlayerManager {
     }
 
     public PlayerData getData(){
-        System.out.println("Server sends " + data.playerCount + " Players");
+        //System.out.println("Server sends " + data.playerCount + " Players");
         return data;
     }
 
@@ -29,7 +29,7 @@ public class PlayerManager {
         if(playerCount == MAXPLAYERS) throw new IllegalStateException("Too many Players");
         if(data.getPlayers()[id] != null) throw new IllegalStateException("Id already taken wtf");
 
-        data.getPlayers()[id] = new Player(data.playerCount);
+        data.getPlayers()[id] = new Player(data.playerCount, s);
         Main.getEventLogger().addEntry("Added new Player with id" + playerCount);
 
         data.playerCount++;
@@ -38,8 +38,6 @@ public class PlayerManager {
     public void changeName(int id, String newName){
         data.getPlayer(id).setName(newName);
     }
-
-
 
     static boolean checkName(String s){
         return s.length() < 10 && s.length() > 3;

@@ -6,7 +6,6 @@ import java.io.ObjectOutput;
 
 public class PlayerData extends DataObject {
     public int playerCount;
-    public int magic;
     private Player[] players;
 
     public PlayerData(int maxs){

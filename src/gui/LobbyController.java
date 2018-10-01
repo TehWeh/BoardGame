@@ -31,20 +31,20 @@ public class LobbyController implements Controller{
     @FXML private TableColumn colCol;
     ObservableList<Player> content;
 
+    private boolean running;
+
     @FXML
     private void initialize() {
-        PlayerData p = ClientDataContainer.getContainer().getPlayerdata();
-        Main.getEventLogger().addEntry("received playercount: " + p.getPlayerCount());
-
         nameCol.setCellValueFactory(
-                new PropertyValueFactory<Player,String>("firstName")
+                new PropertyValueFactory<Player,String>("name")
         );
         content = FXCollections.observableArrayList();
         table.setItems(content);
         fillTable();
 
         new Thread(() -> {
-            while(true){
+            running = true;
+            while(running){
                 fillTable();
                 try {
                     Thread.sleep(1000);
@@ -63,10 +63,7 @@ public class LobbyController implements Controller{
             content.add(p);
             Main.getEventLogger().addEntry(p.getName());
         }
-
-
-
-
+        //table.refresh();
     }
 
     @FXML public void handleJoinButtonSubmit(){
@@ -75,6 +72,6 @@ public class LobbyController implements Controller{
 
     @Override
     public void handleStageShutdown() {
-
+        running = false;
     }
 }
