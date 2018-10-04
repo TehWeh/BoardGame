@@ -1,2 +1,3596 @@
 EventLogger: New File Logger started
-New Controller: gui.MainMenuController@243ff756
+New Controller: gui.MainMenuController@2d3757c6
+ConnectionManager: Setting Up Connection
+InputListener starts running
+msg.meta.IdInfo@3ddf7c47 - size: 109
+Client's Connection Manager: ID received (0)
+ID received
+Filling table
+msg.PlayerDataRequest@3a4c4ce6
+msg.PlayerDataInfo@6020767d - size: 181
+Registered = false
+Filling table
+Registered = false
+New Controller: gui.LobbyController@2c2ea7c4
+msg.PlayerDataRequest@3a4c4ce6
+msg.PlayerDataInfo@39378b8e - size: 181
+Filling table
+Registered = false
+msg.meta.PlayerRegisterRequest@75b6afe4
+Added new Player with id0
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2206399e - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@358254de - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@720a5167 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@44b6cc82 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@29bf8779 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@e3c0234 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Filling table
+Write: TeWe
+Write: TeWe
+TeWe 0
+msg.PlayerDataInfo@2e9dfbfd - size: 227
+Registered = true
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5c3de070 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@96c30c1 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@672fbe7a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@262ce371 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1521b9a4 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7da369f9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6765d459 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@261384af - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3ee7f550 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@586dbfd4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@11e36f9c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2b6fa7f3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2a238abb - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1f851334 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@151010d7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@43966db9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@75564122 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@42fdf00f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@577ec62f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@277592dc - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@606d8841 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4dbd61cb - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6c5399ed - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@67bb15c9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6b18a6ff - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4d0d216e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3de155d3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2cb0afb - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2c4a6b03 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@8e839b5 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3f10aab6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6556e37d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1a3b9ea7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@53d739c4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@69286c12 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3b373741 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7dbf4826 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@174c574c - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3daee14b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3f214480 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@38d8d53a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4d5b035a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7350703 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@32854621 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4c8a244e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@59deaf56 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@767ca671 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6e5052d1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7365b301 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5fed0624 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4c316c86 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@209b690b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7e383ba2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@49d3de67 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@ec1ce87 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@75693d65 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4ab3ed41 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1dc43296 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1df1625f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@21cff691 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7443de0c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@48af1290 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5eda6240 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7f7c74 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@6a2671c9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5a2dc58f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@57e874e8 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2c8f2ebd - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@75febadc - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@414b1851 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@55906ba4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3f4d6d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@172fec - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@1987262f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4f1cb3f0 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3532db5b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@c63ea5e - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@2c7513a3 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6dca6ee - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@25174d6d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@36b5628b - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@32d997f5 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@51d1ac96 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@4e32efe4 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@538e7d93 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2d162e28 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@71ff9200 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@286b0e14 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@8298c6f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1452842c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@19307b34 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@695bcda8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2d557e18 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2da6ec7a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@37d5cb21 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5476fe - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6777d52 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1c2884da - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@53dd8bd - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@26fdbd62 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1bddc902 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@430b80f7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2818401b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@63c5eed7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1625ae74 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@936987f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@634419da - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2fbbf033 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@14d6adbe - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@299e3a3b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6a576c1b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1a9d230a - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3b87c6ba - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@63907c13 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@32f6e3ce - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@418003e9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@44b7af75 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@24a72314 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@214a4cdd - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60948c56 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@19215b36 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4037485 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@77dcfc7c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@336e28ed - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@20052d5d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@3fbdd284 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2f92f613 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6d799a4c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@641f2d7b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@35e7ea8e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@d7da04f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2cf7e056 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@319e7446 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3b274b61 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5b38fb92 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@48de45f3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@aa024ea - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@b5d0a9c - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@17a5840e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2d6eaad4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@26625ce7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4588ab5d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7e36d216 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2656ef0e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@12670a47 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@12b58915 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5adb5f37 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4b64e5fd - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@61fbfbe4 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5f382bef - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5f9ae5d8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@333db8db - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@da74183 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@135e648b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1be2f71d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@45c76fda - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@72db85b8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@1241cd54 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e179a1e - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60508fb9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4e08304e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@52bf6fb6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@705ac895 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1493ac60 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@1b9674fc - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@32fd6ae7 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1445024d - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1dbc5c09 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3525fad6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6cd614c7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@50bd347a - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2f1e6670 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3577da0f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@695b904a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@507c77ff - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@c8da666 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@721a25a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@32cdbb34 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@13df11d - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60e2d9ca - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@6adb94fe - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3590968a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5bcb3c3c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2d918206 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1b5b8f2e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2ace6e09 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@28668db0 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@9c6bb08 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4e2367e1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1744e60a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@b53e25f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@377106c6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@62b873a6 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@52fcad4d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4629ec57 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@79d19562 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@58d5ecbd - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6f74a42f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6636a6c2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@133945e3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@64fee33d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2ee17651 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7db2d5f9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@24fd81f1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@37097958 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@12ffc216 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7989c0ad - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@31333464 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4d0c48a3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@210fcc66 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@16b4ec42 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3e8c6ae4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@116a64c6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4e59f671 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7f3ed504 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@22385b4d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60364798 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@615ddf91 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@68c2a04b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@8c06c2d - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5a18e02a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@55b60daf - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@288b2faa - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@23218f92 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3e25226c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5b9b8b72 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2a1c09d4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@56e4e1a - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@124f3a99 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1508e3b9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5f900a65 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@28f98113 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4309ed67 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@11cedb94 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4ed228ea - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2ac7c93a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@26a96bd0 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@415c16ea - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e16f353 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@a0c77b2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@67166ac8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@465cdb86 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6ff93475 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6216fdf - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@523505f9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@721564d2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@54e9bc79 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@59bb7eac - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@235ba2af - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7a3171e2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@632210a9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@61ee5c7f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1fdec437 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@6e11184f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1d45ea7c - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@e5b500f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@674dc28f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1787d49 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@33dc7110 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6753844c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6e036b93 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2cd3c12f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7c576154 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7ddeb76 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@72f747ed - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@409f2a25 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@785aea3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6feb637e - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@27eb8941 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e1c519b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3446044d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@826128 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7bd841f8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7344791 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3545f56 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@10cce535 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2922a155 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@c0f732f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2d802317 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5a929edf - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6606b4d1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@11673535 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3d533495 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@73f92186 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@208ab314 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@86cf4ad - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@2cbf8ea9 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@16f07fa9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@63177c70 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@c313523 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5cab38ca - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@493309c1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@119f186b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1482bf56 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@11eab864 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@40c6c699 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@29f3d2aa - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@288aa0cd - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6ce71420 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1a63e52b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2db2024f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@504353fc - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4511bc0 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@11efcdc - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3c8336ca - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@76954e15 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7a16d41c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@c983f9e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@29086da1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@75317b73 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@394bf7fd - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@74e24b85 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e6d45dd - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60795f80 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@66bb86d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@60b37546 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@14048720 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@3e2b5f7f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@65583007 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e3a60af - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2e37d9cf - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4a03abd1 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6e7f629e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@238d48e6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@33e404f9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@646e7c77 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@719099f6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3893255a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2b433d7d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3c5961a6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@49f310f2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@686b4563 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5a7125c6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2dd22b7f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7cf7cab7 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4e05c817 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1d898b04 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@213cc219 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@63dc06fb - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3f92fe7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@52f94537 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1592697b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@167a5eec - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5cb6cdd3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@44feeb8f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@42a19bda - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6e8205c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6cdabd07 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5f4b8180 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@117abef8 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5657964b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6fdc3b03 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6c98f0f9 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@28d10eec - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@425e3073 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4cd40f18 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@67602143 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@47e6f52d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7408980a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1848e55c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7ec4b52f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@e7b7847 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3e03794a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@613e09d3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3a88b516 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6fe44b40 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4a88b6df - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5be95ecc - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@24b670a2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@69c5813f - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@66f4ec96 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@77fad1ba - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@605e9c87 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@255725ca - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6486fdaa - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@45d09781 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@51fe9118 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4d9b9798 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e23582c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5f0eb8f6 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7add845e - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6b6bfbca - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@6f0d3cb3 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@456ef0ac - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5307632b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6706772a - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@61e827dd - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@53b140dc - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3bc76fba - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6facf0cf - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@4fdaf428 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@16b4eaaf - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@160efd7c - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1eac4dfa - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@64f81b3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@379fe247 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@569b0cd5 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2a245861 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@509c068f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@18594b01 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@162a017b - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1ec5b48f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2e5d61a6 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7c0e262f - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3a69d10c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@93b7b02 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@4cae7bd2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@419c0336 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@35094bb8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@6738d570 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@58f742ae - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@79536f35 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@6f8af2c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@27ca69d6 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@454aadb3 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@270258e8 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@644002eb - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Externalization: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1030536c - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@8753ec - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@35f78e0c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@51c49503 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@437d1764 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@795f24d4 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@70d1521d - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@548ad89 - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2ea55c73 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2edca4f7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Externalization: TeWe
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@54e75a8b - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+Externalization: TeWe
+msg.PlayerDataInfo@1483917b - size: 227
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@10c1115c - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5bf1f4af - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@35acde58 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@3dac89df - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@25ff24c7 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@71ffe85b - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@2272b622 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@7b4921c2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@27ccfb70 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@297f62e2 - size: 227
+Externalization: TeWe
+Filling table
+TeWe 0
+Registered = true
+msg.PlayerDataRequest@3a4c4ce6
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@1e0b1249 - size: 227
+Externalization: TeWe

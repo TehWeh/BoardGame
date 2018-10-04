@@ -15,6 +15,8 @@ public class PlayerRegisterRequest extends ClientMessage {
         this.name = name;
     }
 
+    public PlayerRegisterRequest(){}
+
     @Override
     public void handle() {
         ClientManagerFactory.getSingleton().registerPlayer(clientID, name);
@@ -22,11 +24,11 @@ public class PlayerRegisterRequest extends ClientMessage {
 
     @Override
     public void writeAdditionalExternal(ObjectOutput out) throws IOException {
-
+        out.writeObject(name);
     }
 
     @Override
-    public void readAdditionalExternal(ObjectInput in) throws IOException {
-
+    public void readAdditionalExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        name = (String) in.readObject();
     }
 }

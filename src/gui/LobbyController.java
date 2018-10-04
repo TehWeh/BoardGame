@@ -6,6 +6,7 @@ import connection.ConnectionManager;
 import data.ClientDataContainer;
 import data.Player;
 import data.PlayerData;
+import game.ClientGameManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -26,9 +27,12 @@ public class LobbyController implements Controller{
     static final int UPDATE_INTERVAL = 1000;
 
     @FXML private TableView table;
-    @FXML private Button join;
+    @FXML private Button joinButton;
+    @FXML private Button leaveButton;
+    @FXML private Button readyButton;
     @FXML private TableColumn nameCol;
     @FXML private TableColumn colCol;
+    @FXML private TableColumn idCol;
     ObservableList<Player> content;
 
     private boolean running;
@@ -37,6 +41,9 @@ public class LobbyController implements Controller{
     private void initialize() {
         nameCol.setCellValueFactory(
                 new PropertyValueFactory<Player,String>("name")
+        );
+        idCol.setCellValueFactory(
+                new PropertyValueFactory<Player,String>("idString")
         );
         content = FXCollections.observableArrayList();
         table.setItems(content);
@@ -61,9 +68,13 @@ public class LobbyController implements Controller{
         content.clear();
         for(Player p : data.getPlayers()) if(p != null) {
             content.add(p);
-            Main.getEventLogger().addEntry(p.getName());
+            Main.getEventLogger().addEntry(p.getName() + " " + p.getID());
         }
-        //table.refresh();
+        boolean registered = ClientGameManager.getManager().registered();
+        Main.getEventLogger().addEntry("Registered = " + registered);
+        readyButton.setDisable(!registered);
+        leaveButton.setDisable(!registered);
+        joinButton.setDisable(registered);
     }
 
     @FXML public void handleJoinButtonSubmit(){

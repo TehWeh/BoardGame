@@ -2,7 +2,7 @@ package msg;
 
 import java.io.*;
 
-public abstract class Message implements Serializable {
+public abstract class Message implements Externalizable {
     protected int clientID;
     protected int messageID;
     protected int threadID;
@@ -12,8 +12,13 @@ public abstract class Message implements Serializable {
         messageID = 0;
     }
 
+    public Message(int cid, int mid) {
+        clientID = cid;
+        messageID = mid;
+    }
+
     public abstract void writeAdditionalExternal(ObjectOutput out) throws IOException;
-    public abstract void readAdditionalExternal(ObjectInput in) throws IOException;
+    public abstract void readAdditionalExternal(ObjectInput in) throws IOException, ClassNotFoundException;
 
     //@Override
     public void writeExternal(ObjectOutput out) throws IOException {

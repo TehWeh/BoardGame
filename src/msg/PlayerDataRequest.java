@@ -9,14 +9,15 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 public class PlayerDataRequest extends ClientMessage {
-    public PlayerDataRequest() {
-    }
+
 
     @Override
     public void handle() {
         PlayerData pd = PlayerManager.getManager().getData();
         ClientManagerFactory.getSingleton().sendMessage(new PlayerDataInfo(clientID, pd)); // TODO Message ids
     }
+
+    public PlayerDataRequest(){}
 
     @Override
     public void writeAdditionalExternal(ObjectOutput out) throws IOException {

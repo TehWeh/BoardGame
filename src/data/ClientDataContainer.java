@@ -17,7 +17,7 @@ public class ClientDataContainer {
     }
 
     public ClientDataContainer(){
-        playerdata = new DataItem<>(500, new PlayerDataRequest());
+        playerdata = new DataItem<>(1000, new PlayerDataRequest());
     }
 
     public PlayerData getPlayerdata() {

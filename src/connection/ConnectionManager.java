@@ -1,7 +1,9 @@
 package connection;
 
 import Log.LogSource;
+import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import config.ConfigurationManager;
+import game.ClientGameManager;
 import main.main.Main;
 import gui.WindowManager;
 import msg.ClientMessage;
@@ -9,6 +11,7 @@ import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -36,8 +39,7 @@ public class ConnectionManager implements LogSource {
     private OutputWriter outputWriter;
     private InputListener inputListener;
 
-
-    private int id;
+    int id;
 
     public void reset(){
         try {
@@ -49,6 +51,7 @@ public class ConnectionManager implements LogSource {
 
     public void setID(IdInfo info){
         this.id = info.getClientID();
+        ClientGameManager.getManager().register(info.getClientID());
         log("Client's Connection Manager: ID received (" + id + ")");
     }
 
@@ -72,6 +75,14 @@ public class ConnectionManager implements LogSource {
     @Override
     public void log(String s) {
                 Main.getEventLogger().addEntry(s);
+    }
+
+    /**
+     *
+     * @return true gdw ID erhalten
+     */
+    public boolean isConntected(){
+        return id > -1;
     }
 
     public class OutputWriter extends Thread{

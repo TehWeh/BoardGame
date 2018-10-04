@@ -1,16 +1,19 @@
 package msg.meta;
 
 import connection.ConnectionManager;
+import main.main.Main;
 import msg.ServerMessage;
 
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
+import java.io.*;
 
 public class IdInfo extends ServerMessage {
 
     public IdInfo(int cid) {
         super(cid);
+    }
+
+    public IdInfo(){
+        super();
     }
 
     @Override
@@ -26,5 +29,6 @@ public class IdInfo extends ServerMessage {
     @Override
     public void handle() {
         ConnectionManager.getManager().setID(this);
+        Main.getEventLogger().addEntry("ID received");
     }
 }

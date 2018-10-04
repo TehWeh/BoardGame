@@ -1,11 +1,13 @@
 package data;
 
+import main.main.Main;
+
 import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 public class Player extends DataObject {
-    int id;
+    Integer id;
     String name;
 
     static final int MAXLEN = 10;
@@ -15,6 +17,8 @@ public class Player extends DataObject {
         this.id = id;
     }
 
+    public Player(){}
+
     public Player(int id, String s){
         this(id);
         name = s;
@@ -23,6 +27,14 @@ public class Player extends DataObject {
     public void setName(String name) throws IllegalArgumentException{
         if(valid(name)) name = name;
         int x;
+    }
+
+    public int getID(){
+        return id;
+    }
+
+    public String getIdString(){
+        return Integer.toString(id);
     }
 
     @Override
@@ -46,12 +58,16 @@ public class Player extends DataObject {
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeInt(id);
         out.writeObject(name);
+        Main.getEventLogger().addEntry("Write: "+ name);
+
     }
 
     //@Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         id = in.readInt();
         name = (String) in.readObject();
+        Main.getEventLogger().addEntry("Externalization: "+ name);
+
     }
 
 }

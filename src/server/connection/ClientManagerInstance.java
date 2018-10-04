@@ -5,6 +5,7 @@ import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 import server.game.PlayerManager;
+import util.Utils;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -89,8 +90,9 @@ class ClientManagerInstance implements ClientManager {
                 Client c = clients[msg.getClientID()];
                 try {
                     c.getObjectOutputStream().writeObject(msg);
+                    c.getObjectOutputStream().flush();
                     c.getObjectOutputStream().reset();
-                    //Main.getEventLogger().addEntry("Server Wrote Message");
+                    Utils.getSize(msg);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
