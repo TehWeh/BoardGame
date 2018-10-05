@@ -7,27 +7,36 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class ClientListener implements Runnable {
-    private Client c;
-    boolean listening;
+    private Client client;
+    private volatile boolean listening;
     ObjectInputStream ois;
 
     public ClientListener(Client c){
-        this.c = c;
+        client = c;
         listening = true;
         try {
-            ois = new ObjectInputStream(c.getSocket().getInputStream());
+            ois = new ObjectInputStream(client.getSocket().getInputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Main.getEventLogger().addEntry("New ClientListener starting up");
+    }
+
+    public void close(){
+        try {
+            ois.close();
+            listening = false;
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
     @Override
     public void run() {
         while(listening){
             try {
                 ClientMessage msg = (ClientMessage) ois.readObject();
-                Main.getEventLogger().addLowPriorityEntry(msg.toString());
+                Main.getEventLogger().addEntry(msg.toString());
                 new Thread(() -> msg.handle()).start();
             } catch (IOException e) {
                 e.printStackTrace();

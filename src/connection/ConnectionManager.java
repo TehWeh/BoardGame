@@ -1,7 +1,6 @@
 package connection;
 
 import Log.LogSource;
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import config.ConfigurationManager;
 import game.ClientGameManager;
 import main.main.Main;
@@ -11,7 +10,7 @@ import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 
-import java.io.ByteArrayOutputStream;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -51,7 +50,7 @@ public class ConnectionManager implements LogSource {
 
     public void setID(IdInfo info){
         this.id = info.getClientID();
-        ClientGameManager.getManager().register(info.getClientID());
+        ClientGameManager.getManager().setPlayerID(info.getClientID());
         log("Client's Connection Manager: ID received (" + id + ")");
     }
 
@@ -129,7 +128,11 @@ public class ConnectionManager implements LogSource {
                         System.out.println(((PlayerDataInfo) m).data.getPlayers().length);
                     } catch(Exception e){}
                     new Thread(() -> m.handle()).start();
-                } catch (IOException e) {
+                }
+                catch(EOFException e){
+                    reset();
+                }
+                catch (IOException e) {
                     e.printStackTrace();
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();

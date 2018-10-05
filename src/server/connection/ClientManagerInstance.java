@@ -1,7 +1,6 @@
 package server.connection;
 
 import main.main.Main;
-import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
 import server.game.PlayerManager;
@@ -9,8 +8,9 @@ import util.Utils;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.util.*;
+import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
+
 
 class ClientManagerInstance implements ClientManager {
 
@@ -18,6 +18,7 @@ class ClientManagerInstance implements ClientManager {
     Client[] clients;
     private ClientWriter clientWriter;
     private int numberOfClients;
+
 
     public ClientManagerInstance(){
         clients = new Client[MAXCLIENTS];
@@ -33,13 +34,19 @@ class ClientManagerInstance implements ClientManager {
         int id = getNextId();
         if(id == -1) throw new IllegalStateException("No id available");
         Client c  =  new Client(id, s);
-
         clients[id] = c;
-        new Thread(new ClientListener(c)).start();
+        //new Thread(new ClientListener(c)).start();
         clientWriter = new ClientWriter();
         clientWriter.start();
         sendMessage(new IdInfo(c.getID()));
+    }
 
+    public synchronized void removeClient(int id){
+        if(id < 0 || id > MAXCLIENTS ||clients[id] == null) throw new IllegalArgumentException("No Client with this id");
+        Client c = clients[id];
+        clients[id] = null;
+        c.shutdown();
+        PlayerManager.getManager().removePlayer(id);
     }
 
     public int getNumberOfClients(){
@@ -54,7 +61,7 @@ class ClientManagerInstance implements ClientManager {
 
     @Override
     public synchronized void sendMessage(ServerMessage m) {
-        clientWriter.messages.add(m);
+        clientWriter.addMessage(m);
     }
 
     @Override
@@ -74,21 +81,33 @@ class ClientManagerInstance implements ClientManager {
         clients[id] = null;
     }
 
+
+
     class ClientWriter extends Thread{
         private Queue<ServerMessage> messages;
         private boolean running;
 
         public ClientWriter(){
-            messages = new ArrayBlockingQueue<>(20);
+            messages = new ArrayBlockingQueue<>(40);
             running = true;
+        }
+
+        public synchronized void addMessage(ServerMessage msg){
+            messages.add(msg);
         }
 
         public void run() {
             while (running) {
                 ServerMessage msg = messages.poll();
+                //Main.getEventLogger().addEntry("Message arrived");
                 if (msg == null) continue;
                 Client c = clients[msg.getClientID()];
+                if(c == null){
+                    Main.getEventLogger().addEntry("ERROR: Server writes messages to non-existent Client");
+                    continue;
+                };
                 try {
+                    Main.getEventLogger().addEntry("WRITE");
                     c.getObjectOutputStream().writeObject(msg);
                     c.getObjectOutputStream().flush();
                     c.getObjectOutputStream().reset();

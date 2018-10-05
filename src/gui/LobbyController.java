@@ -15,6 +15,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import main.main.Main;
+import msg.DisconnectRequest;
 import msg.meta.PlayerRegisterRequest;
 
 import java.util.ArrayList;
@@ -78,7 +79,15 @@ public class LobbyController implements Controller{
     }
 
     @FXML public void handleJoinButtonSubmit(){
-        ConnectionManager.getManager().sendMessage(new PlayerRegisterRequest(ConfigurationManager.getManager().getPlayerName()));
+        ClientGameManager.getManager().register();
+    }
+
+    @FXML public void handleReadyButton(){
+
+    }
+
+    @FXML public void handleLeaveButton(){
+        ConnectionManager.getManager().sendMessage(new DisconnectRequest());
     }
 
     @Override

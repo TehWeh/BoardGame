@@ -24,6 +24,15 @@ public class PlayerManager {
         return data;
     }
 
+    public Player getPlayer(int id){
+        return getData().getPlayer(id);
+    }
+
+    public void removePlayer(int id){
+        if(getPlayer(id) == null) throw new IllegalArgumentException("Player not registered");
+        data.getPlayers()[id] = null;
+    }
+
     public void addPlayer(int id, String s) throws IllegalStateException{
         int playerCount = data.getPlayerCount();
         if(playerCount == MAXPLAYERS) throw new IllegalStateException("Too many Players");

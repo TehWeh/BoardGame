@@ -2,7 +2,6 @@ package gui;
 
 import connection.ConnectionManager;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 
 import java.io.IOException;
 
@@ -14,14 +13,10 @@ public class MainMenuController implements Controller{
             ConnectionManager.getManager().connect();
 
         } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("No running server found on localhost");
-            alert.showAndWait();
+            Alerts.alertError("No running server found on localhost");
             e.printStackTrace();
         } catch(IllegalStateException e){
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText(e.getMessage());
-            alert.showAndWait();
+            Alerts.alertError(e.getMessage());
         }
     }
 
