@@ -1,7 +1,5 @@
 package gui;
 
-
-import config.ConfigurationManager;
 import connection.ConnectionManager;
 import data.ClientDataContainer;
 import data.Player;
@@ -16,10 +14,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import main.main.Main;
 import msg.DisconnectRequest;
-import msg.meta.PlayerRegisterRequest;
-
-import java.util.ArrayList;
-
+import msg.UnjoinRequest;
 
 public class LobbyController implements Controller{
 
@@ -64,7 +59,6 @@ public class LobbyController implements Controller{
     }
     
     private void fillTable(){
-        Main.getEventLogger().addEntry("Filling table");
         PlayerData data = ClientDataContainer.getContainer().getPlayerdata();
         content.clear();
         for(Player p : data.getPlayers()) if(p != null) {
@@ -72,7 +66,6 @@ public class LobbyController implements Controller{
             Main.getEventLogger().addEntry(p.getName() + " " + p.getID());
         }
         boolean registered = ClientGameManager.getManager().registered();
-        Main.getEventLogger().addEntry("Registered = " + registered);
         readyButton.setDisable(!registered);
         leaveButton.setDisable(!registered);
         joinButton.setDisable(registered);
@@ -82,12 +75,11 @@ public class LobbyController implements Controller{
         ClientGameManager.getManager().register();
     }
 
-    @FXML public void handleReadyButton(){
-
-    }
+    @FXML public void handleReadyButton(){}
 
     @FXML public void handleLeaveButton(){
-        ConnectionManager.getManager().sendMessage(new DisconnectRequest());
+        ConnectionManager.getManager().sendMessage(new UnjoinRequest());
+
     }
 
     @Override

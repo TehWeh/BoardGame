@@ -30,6 +30,7 @@ public class PlayerManager {
 
     public void removePlayer(int id){
         if(getPlayer(id) == null) throw new IllegalArgumentException("Player not registered");
+        Main.getEventLogger().addEntry("PlayerManager removes Player " + id);
         data.getPlayers()[id] = null;
     }
 

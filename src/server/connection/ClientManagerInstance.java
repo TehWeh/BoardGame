@@ -64,10 +64,25 @@ class ClientManagerInstance implements ClientManager {
         clientWriter.addMessage(m);
     }
 
+
+
+    public Client getClient(int id) throws IllegalArgumentException {
+        if(id < 0 || id > MAXCLIENTS) throw new IllegalArgumentException("Invalid id");
+        if(clients[id] == null) throw new IllegalArgumentException("No client with id " + id + " found");
+        return clients[id];
+    }
+
     @Override
     public void registerPlayer(int id, String name) {
         if(clients[id] == null) throw new IllegalArgumentException("Id " + id +"  not connected");
         PlayerManager.getManager().addPlayer(id, name);
+    }
+
+    @Override
+    public void unregisterPlayer(int id) {
+        Client c = getClient(id);
+        PlayerManager.getManager().removePlayer(id);
+
     }
 
     private synchronized void kick(int id){

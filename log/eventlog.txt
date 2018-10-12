@@ -1,49 +1,116 @@
 EventLogger: New File Logger started
-New Controller: gui.MainMenuController@708caeda
+New Controller: gui.MainMenuController@661e8014
 ConnectionManager: Setting Up Connection
 New ClientListener starting up
 InputListener starts running
 WRITE
-msg.meta.IdInfo@2eef20eb - size: 109
+msg.meta.IdInfo@12d3294b - size: 109
 Client's Connection Manager: ID received (0)
 ID received
-Filling table
-msg.PlayerDataRequest@60f89a61
+msg.PlayerDataRequest@5cdc2c80
 WRITE
-msg.PlayerDataInfo@4eba490f - size: 181
-Registered = false
-Filling table
-Registered = false
-New Controller: gui.LobbyController@12c6dfb
-msg.PlayerDataRequest@60f89a61
+msg.PlayerDataInfo@2c538f9 - size: 181
+New Controller: gui.LobbyController@69ffc5ef
+msg.PlayerDataRequest@5cdc2c80
 WRITE
-msg.PlayerDataInfo@7aa43955 - size: 181
-Filling table
-Registered = false
-msg.meta.PlayerRegisterRequest@6a00f111
+msg.PlayerDataInfo@691d6939 - size: 181
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@1f4610f5 - size: 181
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@d15db07 - size: 181
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@e91c061 - size: 181
+msg.meta.PlayerRegisterRequest@1326c350
 Added new Player with id0
-msg.PlayerDataRequest@60f89a61
+msg.PlayerDataRequest@5cdc2c80
 WRITE
 Externalization: TeWe
 Write: TeWe
 Write: TeWe
-msg.PlayerDataInfo@632d1f25 - size: 227
-Filling table
+msg.PlayerDataInfo@c47342b - size: 227
 TeWe 0
-Registered = true
-msg.DisconnectRequest@2f027235
-Filling table
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@5c2152f1 - size: 227
+Externalization: TeWe
 TeWe 0
-Registered = true
-Filling table
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+Write: TeWe
+Write: TeWe
+msg.PlayerDataInfo@676e2314 - size: 227
+Externalization: TeWe
+msg.UnjoinRequest@2ea35598
+PlayerManager removes Player 0
 TeWe 0
-Registered = true
-Filling table
-TeWe 0
-Registered = true
-Filling table
-TeWe 0
-Registered = true
-Filling table
-TeWe 0
-Registered = true
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@4ef440fb - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@4ec6d508 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@1826b0fb - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@e464668 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@62592cc3 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@1a4fcb15 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@37c311cf - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@b8a7459 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@209e6edf - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@446d0eba - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@6b8f2291 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@337fab05 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@60c4d323 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@4cf0195f - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@5ef921fa - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@10109ea3 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@560b0a49 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@1afddb36 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@d1ccf62 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@196dbde4 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@173aa5c2 - size: 182
+msg.PlayerDataRequest@5cdc2c80
+WRITE
+msg.PlayerDataInfo@636ae878 - size: 182

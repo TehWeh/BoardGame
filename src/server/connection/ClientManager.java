@@ -13,5 +13,6 @@ public interface ClientManager {
     void sendMessage(ServerMessage m);
 
     void registerPlayer(int id, String name);
+    void unregisterPlayer(int id);
     void removeClient(int id);
 }
