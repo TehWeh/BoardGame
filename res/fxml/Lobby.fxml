@@ -35,6 +35,7 @@
                             <Button fx:id="readyButton" mnemonicParsing="false" onAction="#handleReadyButton" text="Ready" />
                               <Button fx:id="leaveButton" mnemonicParsing="false" onAction="#handleLeaveButton" text="Leave" />
                               <Button fx:id="joinButton" mnemonicParsing="false" onAction="#handleJoinButtonSubmit" text="Join" />
+                              <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh" />
                           </buttons>
                         </ButtonBar>
                      </children>

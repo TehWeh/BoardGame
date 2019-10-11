@@ -1,5 +1,6 @@
-package msg;
+package msg.lobby;
 
+import msg.ClientMessage;
 import server.connection.ClientManagerFactory;
 
 import java.io.IOException;

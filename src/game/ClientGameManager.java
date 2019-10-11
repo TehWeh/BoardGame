@@ -3,7 +3,8 @@ package game;
 import config.ConfigurationManager;
 import connection.ConnectionManager;
 import data.ClientDataContainer;
-import msg.meta.PlayerRegisterRequest;
+import data.Player;
+import msg.lobby.PlayerRegisterRequest;
 
 public class ClientGameManager {
     private static ClientGameManager singleton;
@@ -25,10 +26,19 @@ public class ClientGameManager {
 
     public void register(){
         ConnectionManager.getManager().sendMessage(new PlayerRegisterRequest(ConfigurationManager.getManager().getPlayerName()));
-
     }
 
     public boolean registered(){
-        return ClientDataContainer.getContainer().getPlayerdata().getPlayer(playerID) != null;
+        return getOwnPlayer() != null;
+    }
+
+    public boolean playerReady(){
+        Player p = getOwnPlayer();
+        if (p == null) return false;
+        return p.getReady();
+    }
+
+    public Player getOwnPlayer(){
+        return ClientDataContainer.getContainer().getPlayerdata().getPlayer(playerID);
     }
 }

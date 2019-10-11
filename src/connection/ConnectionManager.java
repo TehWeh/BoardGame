@@ -123,11 +123,12 @@ public class ConnectionManager implements LogSource {
             log("InputListener starts running");
             while (running) {
                 try {
-                    ServerMessage m = (ServerMessage) ois.readObject();
+                    ServerMessage msg = (ServerMessage) ois.readObject();
                     try{
-                        System.out.println(((PlayerDataInfo) m).data.getPlayers().length);
+                        Main.getEventLogger().addEntry("Server -> Client #" + msg.getClientID() + ": " + msg.toString());
+
                     } catch(Exception e){}
-                    new Thread(() -> m.handle()).start();
+                    new Thread(() -> msg.handle()).start();
                 }
                 catch(EOFException e){
                     reset();

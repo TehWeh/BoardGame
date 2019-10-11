@@ -36,10 +36,11 @@ public class ClientListener implements Runnable {
         while(listening){
             try {
                 ClientMessage msg = (ClientMessage) ois.readObject();
-                Main.getEventLogger().addEntry(msg.toString());
+                Main.getEventLogger().addEntry("Client #" + msg.getClientID() + " -> Server: " + msg.toString());
                 new Thread(() -> msg.handle()).start();
             } catch (IOException e) {
                 e.printStackTrace();
+                listening = false;
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }

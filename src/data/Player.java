@@ -9,6 +9,8 @@ import java.io.ObjectOutput;
 public class Player extends DataObject {
     Integer id;
     String name;
+    String color;
+    boolean ready;
 
     static final int MAXLEN = 10;
     static final int MINLEN = 3;
@@ -22,6 +24,15 @@ public class Player extends DataObject {
     public Player(int id, String s){
         this(id);
         name = s;
+        ready = false;
+    }
+
+    public void setReady(boolean b){
+        ready = b;
+    }
+
+    public boolean getReady(){
+        return ready;
     }
 
     public void setName(String name) throws IllegalArgumentException{
@@ -36,7 +47,7 @@ public class Player extends DataObject {
     public String getIdString(){
         return Integer.toString(id);
     }
-
+    public String getReadyString() {return ready ? "Ja" : "Nein";}
     @Override
     public boolean equals(Object o){
         if(o.getClass() != this.getClass()) return false;
@@ -58,7 +69,8 @@ public class Player extends DataObject {
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeInt(id);
         out.writeObject(name);
-        Main.getEventLogger().addEntry("Write: "+ name);
+        out.writeBoolean(ready);
+        //Main.getEventLogger().addEntry("Write: "+ name);
 
     }
 
@@ -66,7 +78,8 @@ public class Player extends DataObject {
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         id = in.readInt();
         name = (String) in.readObject();
-        Main.getEventLogger().addEntry("Externalization: "+ name);
+        ready = in.readBoolean();
+        //Main.getEventLogger().addEntry("Externalization: "+ name);
 
     }
 

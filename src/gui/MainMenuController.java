@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-
 public class MainMenuController implements Controller{
 
     @FXML protected void handleJoinButtonAction() {
@@ -14,7 +13,7 @@ public class MainMenuController implements Controller{
 
         } catch (IOException e) {
             Alerts.alertError("No running server found on localhost");
-            e.printStackTrace();
+            //e.printStackTrace();
         } catch(IllegalStateException e){
             Alerts.alertError(e.getMessage());
         }

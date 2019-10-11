@@ -82,7 +82,6 @@ class ClientManagerInstance implements ClientManager {
     public void unregisterPlayer(int id) {
         Client c = getClient(id);
         PlayerManager.getManager().removePlayer(id);
-
     }
 
     private synchronized void kick(int id){
@@ -95,8 +94,6 @@ class ClientManagerInstance implements ClientManager {
         }
         clients[id] = null;
     }
-
-
 
     class ClientWriter extends Thread{
         private Queue<ServerMessage> messages;
@@ -120,9 +117,8 @@ class ClientManagerInstance implements ClientManager {
                 if(c == null){
                     Main.getEventLogger().addEntry("ERROR: Server writes messages to non-existent Client");
                     continue;
-                };
+                }
                 try {
-                    Main.getEventLogger().addEntry("WRITE");
                     c.getObjectOutputStream().writeObject(msg);
                     c.getObjectOutputStream().flush();
                     c.getObjectOutputStream().reset();

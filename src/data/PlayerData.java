@@ -19,7 +19,6 @@ public class PlayerData extends DataObject {
     public PlayerData(){
     }
 
-
     public Player[] getPlayers(){
         return players;
     }

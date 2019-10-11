@@ -1,4 +1,4 @@
-package msg.meta;
+package msg.lobby;
 
 import msg.ClientMessage;
 import server.connection.ClientManagerFactory;

@@ -1,9 +1,6 @@
 package msg;
 
-import java.io.*;
-
 public abstract class ClientMessage extends Message {
-    protected boolean messageRestored;
 
     public ClientMessage(){
         super();

@@ -1,12 +1,12 @@
 package server.game;
 
-    import data.Player;
+import data.Player;
 import data.PlayerData;
 import main.main.Main;
 
 public class PlayerManager {
     private static PlayerManager singleton = null;
-    private static final int MAXPLAYERS = 10;
+    private static final int MAXPLAYERS = 3;
 
     private PlayerData data;
 
@@ -20,7 +20,6 @@ public class PlayerManager {
     }
 
     public PlayerData getData(){
-        //System.out.println("Server sends " + data.playerCount + " Players");
         return data;
     }
 
@@ -32,6 +31,7 @@ public class PlayerManager {
         if(getPlayer(id) == null) throw new IllegalArgumentException("Player not registered");
         Main.getEventLogger().addEntry("PlayerManager removes Player " + id);
         data.getPlayers()[id] = null;
+        data.playerCount--;
     }
 
     public void addPlayer(int id, String s) throws IllegalStateException{
@@ -45,6 +45,12 @@ public class PlayerManager {
         data.playerCount++;
     }
 
+    public void setReady(int id, boolean b){
+        Player p = getPlayer(id);
+        Main.getEventLogger().addEntry("Player " + p.getName() + " is now " + b);
+        p.setReady(b);
+    }
+
     public void changeName(int id, String newName){
         data.getPlayer(id).setName(newName);
     }
@@ -52,7 +58,4 @@ public class PlayerManager {
     static boolean checkName(String s){
         return s.length() < 10 && s.length() > 3;
     }
-
-
-
 }

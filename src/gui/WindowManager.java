@@ -16,8 +16,6 @@ public class WindowManager {
 
     private static WindowManager singleton;
 
-
-
     public static WindowManager getManager(){
         if(singleton == null) singleton = new WindowManager();
         return singleton;

@@ -6,6 +6,7 @@ public abstract class Message implements Externalizable {
     protected int clientID;
     protected int messageID;
     protected int threadID;
+    protected boolean messageRestored;
 
     public Message() {
         clientID = 0;
@@ -42,4 +43,15 @@ public abstract class Message implements Externalizable {
     }
 
     public abstract void handle();
+
+    private String readString(ObjectInput in) throws IOException {
+        String s = "";
+        try {
+            s = (String) in.readObject();
+        } catch (ClassNotFoundException e) {
+            messageRestored = false;
+            e.printStackTrace();
+        }
+        return s;
+    }
 }
