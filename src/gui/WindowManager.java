@@ -6,10 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import main.main.Main;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 
 public class WindowManager {
@@ -32,11 +29,8 @@ public class WindowManager {
         Parent root = null;
         FXMLLoader fxmlLoader = new FXMLLoader();
         try {
-            URL url = Thread.currentThread().getContextClassLoader().getResource("fxml/" + resource);
-            File file = new File(url.getFile());
-
-            FileInputStream fxmlStream = new FileInputStream(file);
-            root = fxmlLoader.load(fxmlStream);
+            InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream("fxml/" + resource);
+            root = fxmlLoader.load(in);
         } catch (IOException e) {
             e.printStackTrace();
         }

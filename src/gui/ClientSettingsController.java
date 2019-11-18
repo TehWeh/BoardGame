@@ -29,7 +29,6 @@ public class ClientSettingsController implements Controller{
         }
         playerName.setText(ConfigurationManager.getManager().getPlayerName());
         serverIP.setText(ConfigurationManager.getManager().getServerIP());
-
     }
 
     @FXML

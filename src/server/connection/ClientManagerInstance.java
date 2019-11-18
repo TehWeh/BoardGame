@@ -3,6 +3,7 @@ package server.connection;
 import main.main.Main;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
+import msg.meta.ServerError;
 import server.game.PlayerManager;
 import util.Utils;
 
@@ -11,18 +12,18 @@ import java.net.Socket;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
-
 class ClientManagerInstance implements ClientManager {
 
     private static final int MAXCLIENTS = 10;
     Client[] clients;
     private ClientWriter clientWriter;
     private int numberOfClients;
-
+    private ClientListener listener;
 
     public ClientManagerInstance(){
         clients = new Client[MAXCLIENTS];
         numberOfClients = 0;
+        listener = new ClientListener(MAXCLIENTS);
     }
 
     public synchronized int getNextId() {
@@ -35,17 +36,18 @@ class ClientManagerInstance implements ClientManager {
         if(id == -1) throw new IllegalStateException("No id available");
         Client c  =  new Client(id, s);
         clients[id] = c;
-        //new Thread(new ClientListener(c)).start();
+
         clientWriter = new ClientWriter();
         clientWriter.start();
+        listener.addClient(c);
         sendMessage(new IdInfo(c.getID()));
     }
 
     public synchronized void removeClient(int id){
-        if(id < 0 || id > MAXCLIENTS ||clients[id] == null) throw new IllegalArgumentException("No Client with this id");
+        if(id < 0 || id > MAXCLIENTS || clients[id] == null) throw new IllegalArgumentException("No Client with this id");
         Client c = clients[id];
         clients[id] = null;
-        c.shutdown();
+        listener.removeClient(c);
         PlayerManager.getManager().removePlayer(id);
     }
 
@@ -64,23 +66,25 @@ class ClientManagerInstance implements ClientManager {
         clientWriter.addMessage(m);
     }
 
+    public synchronized void sendError(int cid, String s){sendMessage(new ServerError(cid, s));}
 
 
-    public Client getClient(int id) throws IllegalArgumentException {
-        if(id < 0 || id > MAXCLIENTS) throw new IllegalArgumentException("Invalid id");
-        if(clients[id] == null) throw new IllegalArgumentException("No client with id " + id + " found");
+    public Client getClient(int id)  {
+        if(id < 0 || id > MAXCLIENTS) return null;
         return clients[id];
     }
 
     @Override
     public void registerPlayer(int id, String name) {
         if(clients[id] == null) throw new IllegalArgumentException("Id " + id +"  not connected");
+        PlayerManager pm = PlayerManager.getManager();
+        if(pm.isRegistered(id)) sendError(id, "Player #" + id + " is already registered");
         PlayerManager.getManager().addPlayer(id, name);
     }
 
     @Override
     public void unregisterPlayer(int id) {
-        Client c = getClient(id);
+        if(getClient(id) == null) sendMessage(new ServerError(id, "No Player with id" + id + "registered"));
         PlayerManager.getManager().removePlayer(id);
     }
 
@@ -111,7 +115,6 @@ class ClientManagerInstance implements ClientManager {
         public void run() {
             while (running) {
                 ServerMessage msg = messages.poll();
-                //Main.getEventLogger().addEntry("Message arrived");
                 if (msg == null) continue;
                 Client c = clients[msg.getClientID()];
                 if(c == null){
@@ -119,10 +122,10 @@ class ClientManagerInstance implements ClientManager {
                     continue;
                 }
                 try {
+                    c.getObjectOutputStream().writeInt(42);
                     c.getObjectOutputStream().writeObject(msg);
                     c.getObjectOutputStream().flush();
                     c.getObjectOutputStream().reset();
-                    Utils.getSize(msg);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

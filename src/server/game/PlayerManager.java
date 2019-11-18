@@ -45,6 +45,11 @@ public class PlayerManager {
         data.playerCount++;
     }
 
+    public boolean isRegistered(int id){
+        if(id < 0 || id  >= MAXPLAYERS) return false;
+        return data.getPlayers()[id] != null;
+    }
+
     public void setReady(int id, boolean b){
         Player p = getPlayer(id);
         Main.getEventLogger().addEntry("Player " + p.getName() + " is now " + b);

@@ -16,23 +16,15 @@ public class ConfigurationManager {
     private File config;
     private ConfigurationObject confs;
 
-    public ConfigurationManager(){
-        config = new File("config/config.cf");
-        if(!config.exists()) {
-            try {
-                config.createNewFile();
-                confs = new ConfigurationObject();
-                writeConfigFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+    private final String configPath = "config/config.cf";
 
+    public ConfigurationManager(){
         try {
             readFromConfigFile();
         }
         catch(IOException e){
             Alerts.alertError("Unable to load saved Configurations");
+            System.exit(1);
         }
         catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -57,7 +49,7 @@ public class ConfigurationManager {
 
     public void readFromConfigFile() throws ClassNotFoundException, IOException {
         try{
-            confs =  (ConfigurationObject) new ObjectInputStream(new FileInputStream(config)).readObject();
+            confs =  (ConfigurationObject) new ObjectInputStream(Thread.currentThread().getContextClassLoader().getResourceAsStream(configPath)).readObject();
         }
         catch(IOException e){
             confs = new ConfigurationObject();

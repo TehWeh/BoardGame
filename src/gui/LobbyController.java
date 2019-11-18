@@ -1,10 +1,7 @@
 package gui;
 
 import connection.ConnectionManager;
-import data.ClientDataContainer;
-import data.DataItem;
-import data.Player;
-import data.PlayerData;
+import data.*;
 import game.ClientGameManager;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -21,7 +18,7 @@ import msg.lobby.UnjoinRequest;
 
 import java.util.concurrent.ExecutionException;
 
-public class LobbyController implements Controller{
+public class LobbyController implements Controller, DataObserver<PlayerData> {
 
     //Vbox - Hauptlayout
 
@@ -37,11 +34,9 @@ public class LobbyController implements Controller{
     @FXML private TableColumn readyCol;
     ObservableList<Player> content;
 
-    private boolean running;
-
-
     @FXML
     private void initialize() {
+        ClientDataContainer.getContainer().registerObserver(this);
         nameCol.setCellValueFactory(
                 new PropertyValueFactory<Player,String>("name")
         );
@@ -52,32 +47,21 @@ public class LobbyController implements Controller{
                 new PropertyValueFactory<Player, Boolean>("readyString")
         );
         content = FXCollections.observableArrayList();
-        table.setItems(content);
-        fillTable();
-        enableButtons();
 
-        new Thread(() -> {
-            running = true;
-            while(running){
-                fillTable();
-                try {
-                    Thread.sleep(UPDATE_INTERVAL);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-         }).start();
+        table.setItems(content);
+        disableButtons();
+        ClientDataContainer.getContainer().requestData();
     }
     
     private void fillTable(){
-        PlayerData data = ClientDataContainer.getContainer().getPlayerdata();
+        PlayerData data = ClientDataContainer.getContainer().getData();
+
         content.clear();
         for(Player p : data.getPlayers()) if(p != null) {
             content.add(p);
-            //Main.getEventLogger().addEntry(p.getName() + " " + p.getID());
         }
         boolean ready = ClientGameManager.getManager().playerReady();
-        Platform.runLater(() -> {readyButton.setText(ready ? "!Bereit" : "Bereit");});
+        Platform.runLater(() -> readyButton.setText(ready ? "!Bereit" : "Bereit"));
     }
 
     private void enableButtons(){
@@ -96,43 +80,37 @@ public class LobbyController implements Controller{
     @FXML public void handleJoinButtonSubmit(){
         ClientGameManager.getManager().register();
         disableButtons();
-        ClientDataContainer.getContainer().getDataItem().requestData(new Thread(() -> {
-            enableButtons();
-        }));
+        ClientDataContainer.getContainer().requestData();
     }
 
     @FXML public void handleReadyButton(){
         boolean ready = ClientGameManager.getManager().playerReady();
         ConnectionManager.getManager().sendMessage(new SetReadyRequest(!ready));
         readyButton.setDisable(true);
-        ClientDataContainer.getContainer().getDataItem().requestData(new Thread(() -> {
-            enableButtons();
-        }));
+        ClientDataContainer.getContainer().requestData();
     }
 
     @FXML public void handleLeaveButton(){
         ConnectionManager.getManager().sendMessage(new UnjoinRequest());
 
         disableButtons();
-        ClientDataContainer.getContainer().getDataItem().requestData(new Thread(() -> {
-            enableButtons();
-        }));
+        ClientDataContainer.getContainer().requestData();
     }
 
     @FXML public void handleRefreshButton() {
-        DataItem item = ClientDataContainer.getContainer().getDataItem();
-        item.requestData(new Task<Void>() {
-            @Override
-            protected Void call() {
-                Platform.runLater(() -> enableButtons());
-                return null;
-            }
-        }
-        );
+        ClientDataContainer.getContainer().requestData();
     }
 
     @Override
     public void handleStageShutdown() {
-        running = false;
+        ClientDataContainer.getContainer().unregisterObserver(this);
+    }
+
+    @Override
+    public void onUpdate() {
+        Platform.runLater(() -> {
+            enableButtons();
+            fillTable();
+        });
     }
 }

@@ -8,7 +8,7 @@
    <children>
       <VBox alignment="CENTER" layoutX="7.0" prefHeight="269.0" prefWidth="162.0" spacing="10.0">
          <children>
-            <Button fx:id="join" mnemonicParsing="false" onAction="#handleJoinButtonAction" text="Spiel beitreten" />
+            <Button fx:id="join" mnemonicParsing="false" onAction="#handleJoinButtonAction" text="Lobby" />
             <Button fx:id="host" mnemonicParsing="false" onAction="#handleHostButtonAction" text="Hosteinstellungen" />
             <Button id="client" fx:id="client" mnemonicParsing="false" onAction="#handleClientButtonAction" text="Clienteinstellungen" />
          </children>

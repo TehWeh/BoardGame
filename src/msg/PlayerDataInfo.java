@@ -24,7 +24,7 @@ public class PlayerDataInfo extends ServerMessage    {
 
     @Override
     public void handle(){
-        ClientDataContainer.getContainer().setPlayerData(data);
+        ClientDataContainer.getContainer().receive(data);
         // Main.getEventLogger().addEntry("Client received " + data.playerCount + " Players, magic = " + magic + "Magic2 = " + data.magic);
     }
 

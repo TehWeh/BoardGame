@@ -30,7 +30,6 @@ public class DataItem<T extends DataObject>{
 
     public synchronized void receive(T content){
         this.content = content;
-        notify();
         new Thread(() -> {
             try {
                 executeTasks();

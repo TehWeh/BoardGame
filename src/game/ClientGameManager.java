@@ -39,6 +39,6 @@ public class ClientGameManager {
     }
 
     public Player getOwnPlayer(){
-        return ClientDataContainer.getContainer().getPlayerdata().getPlayer(playerID);
+        return ClientDataContainer.getContainer().getData().getPlayer(playerID);
     }
 }

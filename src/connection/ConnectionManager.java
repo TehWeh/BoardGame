@@ -38,7 +38,7 @@ public class ConnectionManager implements LogSource {
     private OutputWriter outputWriter;
     private InputListener inputListener;
 
-    int id;
+    private int id;
 
     public void reset(){
         try {
@@ -64,7 +64,6 @@ public class ConnectionManager implements LogSource {
         outputWriter.start();
         inputListener = new InputListener();
         inputListener.start();
-        WindowManager.getManager().newWindow("Lobby.fxml", "Lobby");
     }
 
     public void sendMessage(ClientMessage msg){
@@ -104,12 +103,12 @@ public class ConnectionManager implements LogSource {
                     if (m == null) continue;
                     m.setID(id);
                     try {
+                        oos.writeInt(42);
                         oos.writeObject(m);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
-
             }
         }
     }
@@ -121,13 +120,24 @@ public class ConnectionManager implements LogSource {
         public void run() {
             running = true;
             log("InputListener starts running");
+            int tries = 0;
             while (running) {
                 try {
+                    while(ois.available() == 0) {
+                        try {
+                            tries++;
+                            Thread.sleep(tries <= 50 ? 50 : 1_000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    tries = 0;
+                    ois.readInt();
                     ServerMessage msg = (ServerMessage) ois.readObject();
-                    try{
-                        Main.getEventLogger().addEntry("Server -> Client #" + msg.getClientID() + ": " + msg.toString());
 
-                    } catch(Exception e){}
+                    Main.getEventLogger().addEntry("Server -> Client #" + msg.getClientID() + ": " + msg.toString());
+                    //Main.getEventLogger().addEntry(Thread.activeCount()+ " active Threads");
+
                     new Thread(() -> msg.handle()).start();
                 }
                 catch(EOFException e){
