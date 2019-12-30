@@ -58,7 +58,7 @@ public class ClientListener implements Runnable {
                     in.readInt();
                     ClientMessage msg = (ClientMessage) in.readObject();
                     Main.getEventLogger().addEntry("Client #" + msg.getClientID() + " -> Server: " + msg.toString());
-                    new Thread(() -> msg.handle()).start();
+                    new Thread(() -> msg.handle()).start(); // msg.handle() ?
                 } catch (IOException e) {
                     e.printStackTrace();
                     listening = false;
@@ -68,7 +68,7 @@ public class ClientListener implements Runnable {
             }
             if(idle) {
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

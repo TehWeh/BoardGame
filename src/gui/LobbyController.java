@@ -6,23 +6,15 @@ import game.ClientGameManager;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import main.main.Main;
 import msg.lobby.SetReadyRequest;
 import msg.lobby.UnjoinRequest;
 
-import java.util.concurrent.ExecutionException;
-
 public class LobbyController implements Controller, DataObserver<PlayerData> {
-
-    //Vbox - Hauptlayout
-
-    static final int UPDATE_INTERVAL = 100;
 
     @FXML private TableView table;
     @FXML private Button joinButton;

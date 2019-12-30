@@ -16,8 +16,6 @@ public class PlayerDataInfo extends ServerMessage    {
     public PlayerDataInfo(int cid, PlayerData data) {
         super(cid);
         this.data = data;
-        //System.out.println("Message contains " + data.playerCount + " Players");
-        //data.playerCount = 12;
     }
 
     public PlayerDataInfo(){}
@@ -25,7 +23,6 @@ public class PlayerDataInfo extends ServerMessage    {
     @Override
     public void handle(){
         ClientDataContainer.getContainer().receive(data);
-        // Main.getEventLogger().addEntry("Client received " + data.playerCount + " Players, magic = " + magic + "Magic2 = " + data.magic);
     }
 
     @Override

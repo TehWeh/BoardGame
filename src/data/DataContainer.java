@@ -1,6 +1,7 @@
 package data;
 
 import connection.ConnectionManager;
+import main.main.Main;
 import msg.ClientMessage;
 
 import java.util.ArrayList;
@@ -11,14 +12,13 @@ public class DataContainer<D extends DataObject> {
     private volatile D data;
     private ClientMessage requestMsg;
 
-    private static final int REQUEST_INTERVALL = 60_000;
     private List<DataObserver<D>> obervers;
 
     public DataContainer(ClientMessage request){
         data = null;
         obervers = new ArrayList<>();
         requestMsg = request;
-
+        Main.getEventLogger().addEntry("Created new Datacontainer");
     }
 
     public synchronized void registerObserver(DataObserver<D> o){

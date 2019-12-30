@@ -11,15 +11,14 @@ public class MainMenuController implements Controller{
         if(!ConnectionManager.getManager().isConntected())
             try {
                 ConnectionManager.getManager().connect();
-                WindowManager.getManager().newWindow("Lobby.fxml", "Lobby");
             } catch (IOException e) {
+                e.printStackTrace();
                 Alerts.alertError("No running server found on localhost");
-                //e.printStackTrace();
             } catch(IllegalStateException e){
+                e.printStackTrace();
                 Alerts.alertError(e.getMessage());
             }
-
-
+        WindowManager.getManager().newWindow("Lobby.fxml", "Lobby");
     }
 
     @FXML protected void handleHostButtonAction(){

@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 class ClientManagerInstance implements ClientManager {
 
@@ -100,7 +101,7 @@ class ClientManagerInstance implements ClientManager {
     }
 
     class ClientWriter extends Thread{
-        private Queue<ServerMessage> messages;
+        private BlockingQueue<ServerMessage> messages;
         private boolean running;
 
         public ClientWriter(){
@@ -114,8 +115,13 @@ class ClientManagerInstance implements ClientManager {
 
         public void run() {
             while (running) {
-                ServerMessage msg = messages.poll();
-                if (msg == null) continue;
+                ServerMessage msg = null;
+                try {
+                    msg = messages.take();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 Client c = clients[msg.getClientID()];
                 if(c == null){
                     Main.getEventLogger().addEntry("ERROR: Server writes messages to non-existent Client");

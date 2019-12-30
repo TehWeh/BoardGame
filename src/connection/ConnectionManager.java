@@ -4,20 +4,17 @@ import Log.LogSource;
 import config.ConfigurationManager;
 import game.ClientGameManager;
 import main.main.Main;
-import gui.WindowManager;
 import msg.ClientMessage;
-import msg.PlayerDataInfo;
 import msg.ServerMessage;
 import msg.meta.IdInfo;
-
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class ConnectionManager implements LogSource {
     private static ConnectionManager singleton;
@@ -84,30 +81,24 @@ public class ConnectionManager implements LogSource {
     }
 
     public class OutputWriter extends Thread{
-        private Queue<ClientMessage> q;
+        private BlockingQueue<ClientMessage> q;
         public OutputWriter(){
-            q = new ArrayBlockingQueue<>(20);
+            q = new ArrayBlockingQueue<>(30);
         }
         public void run(){
             while(true){
-                synchronized(q) {
-                    if (id == -1 || oos == null) {
-                        try {
-                            q.wait(100);
-                            continue;
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    ClientMessage m = q.poll();
-                    if (m == null) continue;
-                    m.setID(id);
-                    try {
-                        oos.writeInt(42);
-                        oos.writeObject(m);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                ClientMessage m = null;
+                try {
+                    m = q.take();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                m.setID(id);
+                try {
+                    oos.writeInt(42);
+                    oos.writeObject(m);
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
         }
@@ -115,35 +106,19 @@ public class ConnectionManager implements LogSource {
 
     public class InputListener extends Thread{
         boolean running;
-
-
         public void run() {
             running = true;
             log("InputListener starts running");
-            int tries = 0;
             while (running) {
                 try {
-                    while(ois.available() == 0) {
-                        try {
-                            tries++;
-                            Thread.sleep(tries <= 50 ? 50 : 1_000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    tries = 0;
                     ois.readInt();
                     ServerMessage msg = (ServerMessage) ois.readObject();
-
                     Main.getEventLogger().addEntry("Server -> Client #" + msg.getClientID() + ": " + msg.toString());
-                    //Main.getEventLogger().addEntry(Thread.activeCount()+ " active Threads");
-
                     new Thread(() -> msg.handle()).start();
                 }
                 catch(EOFException e){
                     reset();
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
